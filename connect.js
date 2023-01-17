@@ -33,7 +33,7 @@ fs.writeFileSync("./database/database.json", JSON.stringify(global.db, null, 2))
 }, 30 * 1000)
 //=================================================//
 if (config.runWith.includes("eplit")) {
-    const { app } = require("./scr/keepalive")
+    const { app } = require("./src/keepalive")
 }
 //=================================================//
 const connectToWhatsApp = async() => {
